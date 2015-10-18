@@ -1,0 +1,29 @@
+html
+
+    //- HTML HEADER
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+
+        title= title || 'Leigh Johnson | Full Stack Web Developer'
+        link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
+
+        //- Global styles
+        link(href="/styles/site.css", rel="stylesheet")
+
+        //- Include template-specific stylesheets by extending the css block
+        block css
+
+        //- Add any other template-specific HEAD tags by extending the head block
+        block head
+    body
+
+        block content
+            include slides
+        block footer
+    script(src='/js/bundle.js')
+    script(src="http://10.11.12.10:1337/livereload.js")
+    block js
+
+    

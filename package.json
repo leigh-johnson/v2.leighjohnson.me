@@ -1,0 +1,31 @@
+{
+  "name": "leighjohnson.me",
+  "version": "0.2.0",
+  "description": "Source files for http://leighjohnson.me",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Leigh Johnson <hi@leighjohnson.me>",
+  "license": "MIT",
+  "devDependencies": {
+    "connect": "^3.4.0",
+    "dotenv": "^1.2.0",
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^4.0.1",
+    "grunt-contrib-jade": "^0.15.0",
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-sass": "^1.1.0-beta",
+    "jade": "^1.11.0",
+    "jshint-stylish": "^2.0.1",
+    "load-grunt-configs": "^0.4.3",
+    "load-grunt-tasks": "^3.3.0",
+    "node-sass": "^3.3.3",
+    "serve-static": "^1.10.0"
+  },
+  "dependencies": {
+    "fullpage.js": "^2.7.4",
+    "jquery": "^2.1.4"
+  }
+}

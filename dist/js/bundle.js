@@ -11774,6 +11774,14 @@ return jQuery;
 window.$ = window.jQuery = require('jquery')
 var bootstrap = require('bootstrap');
 var fullpage = require('fullpage.js');
+
+$(document).ready(function(){
+    $('#fullpage').fullpage({
+        navigation: true,
+        navigationTooltips: ['Hi', 'Data-driven Designs'],
+        verticalCentered: true
+    });
+});
 },{"bootstrap":"bootstrap","fullpage.js":1,"jquery":2}],"bootstrap":[function(require,module,exports){
 /*!
  * Bootstrap v4.0.0-alpha (http://getbootstrap.com)

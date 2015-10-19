@@ -1,1 +1,37 @@
-include partials/slide-1
+#fullpage
+    .section.container-fluid#slide-hi(data-anchor='hi')
+        .row
+            .col-sm-3.col-md-offset-1
+                h2 Hi! My name is
+                h1.display-1 #[span.purple L]eigh#[img(src="/images/logo-v2.png")] 
+                h1.display-1 #[span.backward.purple L]ohnson
+                p I'm a freelancer based in Raleigh, NC & currently working as a Full Stack Web Developer #[a(href="http://www.funcom.com/") @Funcom].
+
+            .col-sm-6.text-center
+                h1 I'm here to help.
+                h4 I dive straight a variety of stacks.
+                .row
+                    ul.col-sm-offset-1.text-left.list-unstyled.col-sm-5: #[strong Back-end & Automation]
+                        li NodeJS, Express, Socket.io
+                        li Python
+                        li Grunt, Puppet
+                        li PHP
+                    ul.text-left.list-unstyled.col-sm-5: #[strong Front-end & Graphic Design]
+                        li AngularJS, jQuery
+                        li SASS, LESS, Templates
+                        li Responsive frameworks
+                        li Adobe CS
+            .col-sm-4
+
+    .section(data-anchor='data-driven')
+        .slide(data-anchor='case-study-1')
+            h1 Case Study: Value Communication
+            p Conversion increased by xx% by replacing a text-heavy advertisement design with a single image.
+            img
+        .slide(data-anchor='a-b-testing')
+        .slide(data-anchor='custom-crm')
+    .section(data-anchor='human-readable')
+        .slide
+        .slide
+        .slide
+    .section(data-anchor='workflow-automation')

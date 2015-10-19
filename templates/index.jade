@@ -10,8 +10,8 @@ html
         link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
 
         //- Global styles
+        link(href='https://fonts.googleapis.com/css?family=Raleway:400,700|Bitter:400,700' rel='stylesheet' type='text/css')
         link(href="/styles/site.css", rel="stylesheet")
-
         //- Include template-specific stylesheets by extending the css block
         block css
 
@@ -19,11 +19,13 @@ html
         block head
     body
 
+        #header
+        #footer
         block content
             include slides
         block footer
     script(src='/js/bundle.js')
-    script(src="http://10.11.12.10:1337/livereload.js")
+    script(src="http://localhost:1337/livereload.js")
     block js
 
     

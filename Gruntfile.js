@@ -17,7 +17,6 @@ module.exports = function(grunt) {
     };
 
     var configs = require('load-grunt-configs')(grunt, options);
-    console.log(configs)
     // Project configuration.
     grunt.initConfig(configs);
 

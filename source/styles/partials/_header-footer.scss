@@ -1,0 +1,25 @@
+#header{
+    top: 0px;
+}
+#footer{
+    bottom: 0px;
+    box-shadow:
+       0    0   1px  rgba(255,255,255,.8), /* Bright outer highlight */
+       0    0   3px  rgba(0,0,0,.8),       /* Outer shadow */
+       0    0  0    rgba(0,0,0,.8) inset, /* Inner shadow (top + left) */
+      -1px  0 0    rgba(0,0,0,.9) inset; /* Inner shadow (bottom + right) */
+}
+#header, #footer{
+    padding: 20px 0 0 0;
+    position: fixed;
+    height: 50px;
+    display: block;
+    width: 100%;
+    background: rgba(225,225,225,0.2);
+    z-index: 9;
+    box-shadow:
+       0    0   1px  rgba(255,255,255,.8), /* Bright outer highlight */
+       0    0   3px  rgba(0,0,0,.8),       /* Outer shadow */
+       0    0   0    rgba(0,0,0,.8) inset, /* Inner shadow (top + left) */
+      -1px  0   0    rgba(0,0,0,.9) inset; /* Inner shadow (bottom + right) */
+}

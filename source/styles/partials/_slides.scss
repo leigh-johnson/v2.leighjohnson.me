@@ -1,0 +1,24 @@
+$teal: #3FB8AF;
+$blue: #7BAABE;
+$purple: #8275A0;
+h1{
+font-family: 'Bitter';
+text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);}
+.purple{
+    color: $purple;
+}
+.backward{
+     display: inline-block;
+    -moz-transform: scale(-1, 1); 
+    -webkit-transform: scale(-1, 1);  
+    transform: scale(-1, 1); 
+}
+#slide-hi{
+  @include linear-gradient(60deg, $blue 5%, $teal 99%);
+  img{
+    width: 1.8em;
+    height: auto;
+  }
+}

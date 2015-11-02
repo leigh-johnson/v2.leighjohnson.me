@@ -1,6 +1,9 @@
 $teal: #3FB8AF;
 $blue: #7BAABE;
 $purple: #8275A0;
+a{
+  font-weight: 800;
+}
 h1{
 font-family: 'Bitter';
 text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
@@ -17,9 +20,49 @@ text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
 }
 #slide-hi{
   @include linear-gradient(60deg, $blue 5%, $teal 99%);
-  img{
+  #logo{
     width: 1.8em;
     height: auto;
+  }
+  a button{
+    margin: 0 auto;
+  }
+}
 
+#slide-work{
+  @include  linear-gradient(60deg, lighten(#616161, 20%) 30%, #9bc5c3 90%);  
+  .overlap{
+    @include transition(all 0.5s ease-in-out);
+    opacity: 0.2;
+    @include margin(null 1em null null);
+  }
+  #thepark-crm{
+    @include transform(translateY(20px));
+  }
+  .overlap-first{
+    opacity: 0.2;
+    @include transform-style(preserve-3d);
+    @include transform(rotateX(-30deg) rotateY(20deg));
+
+    //@include margin(null -2em null -2em);
+  }
+  .overlap-last{
+    opacity: 0.2;
+    @include transform-style(preserve-3d);
+    @include transform(rotateX(30deg) rotateY(20deg));
+
+    //@include margin(null -2em null -2em);
+      }
+  .overlap-middle{
+    margin-top: 3em;
+  }
+  #thepark-crm .active{
+    @include transition(all 0.5s ease-in-out);
+    @include transform(scale(1.26));
+    img{
+      box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+    }
+    opacity: 1;
+    z-index: 10;
   }
 }

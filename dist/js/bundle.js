@@ -11816,13 +11816,20 @@ $(document).ready(function(){
         console.log($(this));
     });
 
+    $('#thepark-crm .overlap').hover(function(){
+        // remove current active
+        $('#thepark-crm .active').removeClass('active');
+        $(this).addClass('active');
+        console.log($(this))
+    });
+
     // 
     // init fullpage
     $('#fullpage').fullpage({
         //navigation: true,
         //navigationTooltips: ['Hi', 'Data-driven Designs'],
-        verticalCentered: true,
-        //showActiveTooltip: true,
+        verticalCentered: false,
+        paddingTop: '8em',
         afterRender: function(){
             setInterval(moveTimeline, 4200);
         }

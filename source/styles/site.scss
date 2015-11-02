@@ -2,6 +2,10 @@
 @import 'vendors/bootstrap/bootstrap-flex';
 @import 'vendors/jquery.fullPage';
 @import 'vendors/icomoon';
+@import 'vendors/bourbon/settings/prefixer';
+@import 'vendors/bourbon/addons/prefixer';
+@import 'vendors/bourbon/css3/transform';
+@import 'vendors/bourbon/css3/transition';
 //@import 'vendors/mfizz';
 // Mixins
 

@@ -1,17 +1,20 @@
 #fullpage
     .section.container-fluid#slide-hi(data-anchor='hello')
         .row
-            .col-lg-3.col-lg-offset-1.col-md-4.col-xs-6.col-xs-offset-3
-                h2 Hi! My name is
-                h1.display-1 #[span.purple L]eigh#[img(src="/images/logo-v2.png")] 
-                h1.display-1 #[span.backward.purple L]ohnson
-                p I'm a freelancer based in Raleigh, NC, currently working as a Full Stack Web Developer #[a(href="http://www.funcom.com/") @Funcom].
+            .col-lg-4.col-lg-offset-2.col-md-4.col-xs-12
+                .row
+                    h1.display-1 #[span.purple L]eigh#[img#logo(src="/images/logo-v2.png")] #[span.backward.purple L]ohnson
+                .row 
+                    p.col-lg-8 I'm a freelancer based #[strong Raleigh, NC]. Currently, I work fulltime #[a(href="http://www.funcom.com/") @Funcom] as a  #[strong Full Stack Web Developer].
 
-            .col-lg-6.text-center.col-xs-12
+                    h2.col-lg-10 I #[span.text-muted brand,] #[span.text-muted build,] and #[span.text-muted bring to market] all sorts of products.
+
+            .col-lg-4.text-center.col-xs-12
                 h1 I'm here to help!
                 h6 Technical + Business Intelligence
                 h6 Quick, Custom Solutions for Web Problems
-                h3.text-center I dive straight into a variety of stacks.
+                hr.m-t-md
+                h2.text-center I dive straight into a variety of stacks.
                 .row
                     ul.col-xs-6.col-lg-offset-1.text-center.list-unstyled.col-md-6.col-lg-5: #[strong Back-end & Automation]
                         li NodeJS, Express, Socket.io
@@ -24,16 +27,52 @@
                         li Responsive Frameworks
                         li Adobe Creative Suite 
         .row 
-            .col-lg-10.col-lg-offset-1.hidden-sm-down.col-md-12
+            .col-lg-8.col-lg-offset-2.hidden-sm-down.col-md-12
                 include partials/timeline
+        .row
+            a(href="#work"): button.btn.btn-primary: h2 #[span.icon-forward] See My Work In Action
 
-    .section.container-fluid#slide-work(data-anchor='work')
-        .slide(data-anchor='case-study-1')
-            h1 Case Study: Value Communication
-            p Conversion increased by xx% by replacing a text-heavy advertisement design with a single image.
-            img
-        .slide(data-anchor='a-b-testing')
-        .slide(data-anchor='custom-crm')
+    .section#slide-work(data-anchor='work')
+
+        .slide.container-fluid(data-anchor='theparkgame')
+            .row
+                .col-md-5.col-md-offset-1.col.text-center
+                    .row
+                        h1 www.theparkgame.com
+                        hr.m-t-md
+                        h3 Node.js, Jade, SASS, Grunt workflow
+                        hr.m-t-md
+                        p.text-left Design, develop, and deploy a content-rich landing page for #[a(href="http://www.theparkgame.com") The Park], a single-player video game by #[a(href="http://www.funcom.com") Funcom]. Build a game brand identity, informed by event-driven data collection.
+                        p.text-left Design and ship complimentary marketing materials. 
+                        p.text Execute CRM strategy, and report on successful A/B results.
+                    .row#thepark-crm
+                        .col-md-3.overlap-first.overlap
+                            img.img-responsive(src='/images/thepark-crm-1.png')
+                        .col-md-3.overlap.active.overlap-middle
+                            img.img-responsive(src='/images/thepark-crm-2.png')
+                        .col-md-3.overlap-last.overlap
+                            img.img-responsive(src='/images/thepark-crm-3.png')
+                .col-md-6
+                    a(href="http://www.theparkgame.com"): img.img-responsive.img-rounded(src='/images/parkgame-ipad.png')
+                    .row
+                        .col-md-6.col-md-offset-3.text-center
+                            hr.m-t-md
+                            h3 Responsive
+                            h3 Modern full-width design
+                            h3 Event-driven analytics
+                            h3 Content Management System
+
+
+        .container-fluid.slide(data-anchor='anarchy-online')
+            .row
+                .col-md-2
+                    h1 www.anarchy-online.com
+                    img
+
+        .container.slide(data-anchor='a-b-testing')
+            .col-md-6
+        .container.slide(data-anchor='custom-crm')
+            .col-md-6
     .section(data-anchor='human-readable')
         .slide
         .slide

@@ -1,11 +1,14 @@
 // - Vendors
 @import 'vendors/bootstrap/bootstrap-flex';
 @import 'vendors/jquery.fullPage';
-@import 'vendors/mfizz';
+@import 'vendors/icomoon';
+//@import 'vendors/mfizz';
 // Mixins
 
+@import 'partials/animate';
 @import 'partials/mixins';
 
-// Partals
+@import 'partials/timeline';
 @import 'partials/header-footer';
 @import 'partials/slides';
+@import 'partials/menu';

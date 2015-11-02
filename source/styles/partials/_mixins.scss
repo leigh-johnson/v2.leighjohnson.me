@@ -1,3 +1,7 @@
+
+
+/// Linear gradient 
+
 @mixin linear-gradient($angle, $color-stops...) {
   $_angle-with-vendor-prefix: "";
   $_angle: "";
@@ -34,3 +38,32 @@
   background: -o-linear-gradient($_angle-with-vendor-prefix, $color-stops);
   background: linear-gradient($_angle, $color-stops);
 }
+
+/// Directional property & margin
+/// bourbon.io
+/// Provides a quick method for targeting `margin` on specific sides of a box. Use a `null` value to “skip” a side.
+///
+/// @param {Arglist} $vals
+///   List of arguments
+///
+/// @example scss - Usage
+///   .element {
+///     @include margin(null 10px 3em 20vh);
+///   }
+///
+/// @example css - CSS Output
+///   .element {
+///     margin-bottom: 3em;
+///     margin-left: 20vh;
+///     margin-right: 10px;
+///   }
+///
+/// @require {mixin} directional-property
+///
+/// @output `margin`
+
+@import 'directional-property';
+@mixin margin($vals...) {
+  @include directional-property(margin, false, $vals...);
+}
+

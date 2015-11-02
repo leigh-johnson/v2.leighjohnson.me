@@ -1,0 +1,35 @@
+// Credit to http://codepen.io/escapedcat/pen/eokar
+ol.timeline
+  li.timeline-step.done(data-timeline="1")
+    input.timeline-step-radio(type='radio')
+    label.timeline-step-label.active.animated.rotateInUpLeft()
+      span.timeline-step-content
+        | Envision your brand. Communicate core values. Create goals. Set milestones.
+    span.timeline-step-title
+      | Identify Needs
+    i.timeline-step-marker.icon-pencil
+  li.timeline-step(data-timeline="2")
+    input.timeline-step-radio(type='radio')
+    label.timeline-step-label()
+      span.timeline-step-content
+        | Carefully execute the plan.
+        | Milestone check-ins ensure we're on track.
+    span.timeline-step-title
+      | Develop the solution
+    i.timeline-step-marker.icon-wrench
+  li.timeline-step(data-timeline="3")
+    input.timeline-step-radio(type='radio')
+    label.timeline-step-label()
+      span.timeline-step-content
+        | Solve real problems in the wildnerness. 
+    span.timeline-step-title
+      | Build environment & deploy
+    i.timeline-step-marker.icon-tree
+  li.timeline-step(data-timeline="4")
+    input.timeline-step-radio(type='radio')
+    label.timeline-step-label()
+      span.timeline-step-content
+        | Metrics reveal ROI and added value of services.
+    span.timeline-step-title
+      | Track success
+    i.timeline-step-marker.icon-stats-dots

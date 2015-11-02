@@ -1,29 +1,33 @@
 #fullpage
-    .section.container-fluid#slide-hi(data-anchor='hi')
+    .section.container-fluid#slide-hi(data-anchor='hello')
         .row
-            .col-sm-3.col-md-offset-1
+            .col-lg-3.col-lg-offset-1.col-md-4.col-xs-6.col-xs-offset-3
                 h2 Hi! My name is
                 h1.display-1 #[span.purple L]eigh#[img(src="/images/logo-v2.png")] 
                 h1.display-1 #[span.backward.purple L]ohnson
-                p I'm a freelancer based in Raleigh, NC & currently working as a Full Stack Web Developer #[a(href="http://www.funcom.com/") @Funcom].
+                p I'm a freelancer based in Raleigh, NC, currently working as a Full Stack Web Developer #[a(href="http://www.funcom.com/") @Funcom].
 
-            .col-sm-6.text-center
-                h1 I'm here to help.
-                h4 I dive straight a variety of stacks.
+            .col-lg-6.text-center.col-xs-12
+                h1 I'm here to help!
+                h6 Technical + Business Intelligence
+                h6 Quick, Custom Solutions for Web Problems
+                h3.text-center I dive straight into a variety of stacks.
                 .row
-                    ul.col-sm-offset-1.text-left.list-unstyled.col-sm-5: #[strong Back-end & Automation]
+                    ul.col-xs-6.col-lg-offset-1.text-center.list-unstyled.col-md-6.col-lg-5: #[strong Back-end & Automation]
                         li NodeJS, Express, Socket.io
-                        li Python
+                        li Python, Ruby, PHP
                         li Grunt, Puppet
-                        li PHP
-                    ul.text-left.list-unstyled.col-sm-5: #[strong Front-end & Graphic Design]
+                        li REST & SOAP
+                    ul.col-xs-6.text-center.list-unstyled.col-md-6.col-lg-5: #[strong Front-end & Graphic Design]
                         li AngularJS, jQuery
-                        li SASS, LESS, Templates
-                        li Responsive frameworks
-                        li Adobe CS
-            .col-sm-4
+                        li SASS, LESS, Template Engines
+                        li Responsive Frameworks
+                        li Adobe Creative Suite 
+        .row 
+            .col-lg-10.col-lg-offset-1.hidden-sm-down.col-md-12
+                include partials/timeline
 
-    .section(data-anchor='data-driven')
+    .section.container-fluid#slide-work(data-anchor='work')
         .slide(data-anchor='case-study-1')
             h1 Case Study: Value Communication
             p Conversion increased by xx% by replacing a text-heavy advertisement design with a single image.

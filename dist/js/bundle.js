@@ -635,7 +635,6 @@ require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof requ
             }
 
             section.css('height', windowsHeight + 'px');
-
             if(options.paddingTop){
                 section.css('padding-top', options.paddingTop);
             }
@@ -11813,25 +11812,75 @@ $(document).ready(function(){
 
     // observe hover events
     $('.timeline-step-marker').on('hover touch', function(){
-        console.log($(this));
+        //console.log($(this));
     });
 
-    $('#thepark-crm .overlap').hover(function(){
+    $('.overlap').hover(function(){
         // remove current active
-        $('#thepark-crm .active').removeClass('active');
+        $('.overlap.active').removeClass('active');
         $(this).addClass('active');
-        console.log($(this))
+       // console.log($(this))
     });
 
-    // 
+    // add .active class to .navbar-sub
+    var toggleHighlight = function(slideAnchor){
+        $('.navbar-sub li.active').removeClass('active');
+        $('.navbar-sub li[data-menuanchor='+slideAnchor).addClass('active');
+    }
+
+    var toggleSubMenu = function(nextIndex){
+        if (nextIndex == 2){
+             $('.navbar-sub').removeClass('hide')
+             $('.navbar-sub').addClass('animated bounceInLeft')   
+         }
+        else{
+            $('.navbar-sub').addClass('hide')
+             $('.navbar-sub').addClass('animated bounceInRight')   
+        }
+    }
+
+    $('#slide-work').bind('mousewheel', function(e){
+        /*
+        if (window.location.hash == '#work/gameplay-design'){
+            $.fn.fullpage.moveSectionDown();
+            return
+        }
+        */
+        if(e.originalEvent.wheelDelta /120 > 0) {
+            $.fn.fullpage.moveSlideLeft();
+        }
+        else{
+            $.fn.fullpage.moveSlideRight();       
+             }
+    });
+
+    $('#next').click(function(){
+        $.fn.fullpage.moveSlideRight();       
+    });
+    
     // init fullpage
     $('#fullpage').fullpage({
         //navigation: true,
         //navigationTooltips: ['Hi', 'Data-driven Designs'],
         verticalCentered: false,
-        paddingTop: '8em',
+        paddingTop: '4.2em',
+        resize: false,
+        fixedElements: '.navbar-fixed-top',
+        menu: '.navbar-nav',
+        loopHoriztonal: false,
+        slidesNavigation: false,
+        // disables vertical scrolling
+        normalScrollElements: '#slide-work',
         afterRender: function(){
-            setInterval(moveTimeline, 4200);
+            //setInterval(moveTimeline, 4200);
+            //$.fn.fullpage.reBuild();
+        },
+        afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex){
+            toggleHighlight(slideAnchor);
+        },
+        onLeave: function (index, nextIndex, direction){
+            toggleSubMenu(nextIndex);
+            console.log(nextIndex)
         }
     });
 });

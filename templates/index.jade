@@ -20,14 +20,17 @@ html
     body
 
         #header
-        #footer
         block menu
             include partials/menu
         block content
-            include slides
-        block footer
+            include slides-test
+        //block footer
+                #footer
+                    p I keep current with new technology, to give you an extra edge over competition. For example, this site was build with Bootstrap 4!
+    
     script(src='/js/bundle.js')
-    script(src="http://10.11.12.10:1337/livereload.js")
+    script(src="http://10.11.12.8:1337/livereload.js")
+    //script(src="http://localhost:1337/livereload.js")
     block js
 
     

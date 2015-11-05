@@ -1,80 +1,121 @@
 #fullpage
-    .section.container-fluid#slide-hi(data-anchor='hello')
-        .row
-            .col-lg-4.col-lg-offset-2.col-md-4.col-xs-12
-                .row
-                    h1.display-1 #[span.purple L]eigh#[img#logo(src="/images/logo-v2.png")] #[span.backward.purple L]ohnson
-                .row 
-                    p.col-lg-8 I'm a freelancer based #[strong Raleigh, NC]. Currently, I work fulltime #[a(href="http://www.funcom.com/") @Funcom] as a  #[strong Full Stack Web Developer].
-
-                    h2.col-lg-10 I #[span.text-muted brand,] #[span.text-muted build,] and #[span.text-muted bring to market] all sorts of products.
-
-            .col-lg-4.text-center.col-xs-12
-                h1 I'm here to help!
-                h6 Technical + Business Intelligence
-                h6 Quick, Custom Solutions for Web Problems
-                hr.m-t-md
-                h2.text-center I dive straight into a variety of stacks.
-                .row
-                    ul.col-xs-6.col-lg-offset-1.text-center.list-unstyled.col-md-6.col-lg-5: #[strong Back-end & Automation]
-                        li NodeJS, Express, Socket.io
-                        li Python, Ruby, PHP
-                        li Grunt, Puppet
-                        li REST & SOAP
-                    ul.col-xs-6.text-center.list-unstyled.col-md-6.col-lg-5: #[strong Front-end & Graphic Design]
-                        li AngularJS, jQuery
-                        li SASS, LESS, Template Engines
-                        li Responsive Frameworks
-                        li Adobe Creative Suite 
-        .row 
-            .col-lg-8.col-lg-offset-2.hidden-sm-down.col-md-12
-                include partials/timeline
-        .row
-            a(href="#work"): button.btn.btn-primary: h2 #[span.icon-forward] See My Work In Action
-
-    .section#slide-work(data-anchor='work')
-
-        .slide.container-fluid(data-anchor='theparkgame')
+    .section.container#slide-hi(data-anchor='hello')
             .row
-                .col-md-5.col-md-offset-1.col.text-center
-                    .row
-                        h1 www.theparkgame.com
-                        hr.m-t-md
-                        h3 Node.js, Jade, SASS, Grunt workflow
-                        hr.m-t-md
-                        p.text-left Design, develop, and deploy a content-rich landing page for #[a(href="http://www.theparkgame.com") The Park], a single-player video game by #[a(href="http://www.funcom.com") Funcom]. Build a game brand identity, informed by event-driven data collection.
-                        p.text-left Design and ship complimentary marketing materials. 
-                        p.text Execute CRM strategy, and report on successful A/B results.
-                    .row#thepark-crm
-                        .col-md-3.overlap-first.overlap
-                            img.img-responsive(src='/images/thepark-crm-1.png')
-                        .col-md-3.overlap.active.overlap-middle
-                            img.img-responsive(src='/images/thepark-crm-2.png')
-                        .col-md-3.overlap-last.overlap
-                            img.img-responsive(src='/images/thepark-crm-3.png')
                 .col-md-6
-                    a(href="http://www.theparkgame.com"): img.img-responsive.img-rounded(src='/images/parkgame-ipad.png')
                     .row
-                        .col-md-6.col-md-offset-3.text-center
-                            hr.m-t-md
-                            h3 Responsive
-                            h3 Modern full-width design
-                            h3 Event-driven analytics
-                            h3 Content Management System
+                        h1.display-1 #[span.purple L]eigh#[img#logo(src="/images/logo-v2.png")] #[span.backward.purple L]ohnson
+                    .row.m-t
+                        h6 I'm a freelancer based #[strong Raleigh, NC]. Currently, I work fulltime #[a(href="http://www.funcom.com/") @Funcom] as a  #[strong Full Stack Web Developer]. 
 
+                        h2 I #[span.text-muted brand,] #[span.text-muted build,] and #[span.text-muted bring to market] all sorts of products.
+                    .row.m-t
+                        a(href="#work"): button.btn.btn-primary: h2 #[span.icon-forward] See My Work
+                .col-md-6.text-center
+                    //h1 I'm here to help.
+                    .m-t-lg
+                    h6 Technical + Business Intelligence
+                    h6 Quick, Custom Solutions for Web Problems
+                    hr.m-t-md
+                    h2.text-center I dive straight into a variety of stacks.
+                    .row
+                        ul.col-xs-6.col-lg-offset-1.text-center.list-unstyled.col-md-6.col-lg-5: #[strong Back-end & Automation]
+                            li NodeJS, Express, Socket.io
+                            li Python, Ruby, PHP
+                            li Grunt, Puppet
+                            li REST & SOAP
+                        ul.col-xs-6.text-center.list-unstyled.col-md-6.col-lg-5: #[strong Front-end & Graphic Design]
+                            li AngularJS, jQuery
+                            li SASS, LESS, Template Engines
+                            li Responsive Frameworks
+                            li Adobe Creative Suite 
+            .row 
+                .hidden-sm-down.col-md-12
+                    include partials/timeline
+    .section.container#slide-work(data-anchor='work')
+        .slide.fp-auto-height(data-anchor='the-park')
+                .row
+                    .col-md-6
+                            h1: small www.theparkgame.com
+                            hr
+                            h3 Node.js, Jade, SASS, Grunt workflow
+                            p.text-left Design, develop, and deploy a #[strong content-rich landing page] for #[a(href="http://www.theparkgame.com") The Park], a single-player video game by #[a(href="http://www.funcom.com") Funcom]. Help build a game brand identity, informed by event-driven data collection.
+                            p.text-left Design and ship complimentary CRM materials. Use A/B test stategies to inform successful decisions.
+                            .row.m-t-md
+                                .col-md-3.overlap-first.overlap.col-md-offset-1
+                                    img.img-responsive(src='/images/thepark-crm-1.png')
+                                .col-md-3.overlap.active.overlap-middle
+                                    img.img-responsive(src='/images/thepark-crm-2.png')
+                                .col-md-3.overlap-last.overlap
+                                    img.img-responsive(src='/images/thepark-crm-3.png')
+                    .col-md-6
+                        a(href="http://www.theparkgame.com"): img.img-responsive.img-rounded(src='/images/parkgame-ipad.png')
+                        .row
+                            .col-md-10.col-md-offset-1.text-center
+                                hr.m-t-md
+                                h6 Responsive
+                                h6 Modern full-width design
+                                h6 Event-driven analytics
+                                h6 Content Management System
+                        .row.m-t
+                            a(href="http://theparkgame.com" target="_blank"): button.btn.btn-primary: h2 #[span.icon-forward] View Site
+        .slide.fp-auto-height(data-anchor='anarchy-online')
+                .row
+                    .col-md-7
+                        h1: small www.anarchy-online.com
+                        hr
+                        h3 Node.js, Jade, SASS, Grunt workflow
+                        p.text-left Design, develop, and deploy a #[strong trial funnel] for #[a(href="http://anarchy-online.com") Anarchy Online], the longest-running science fiction MMORPG of all time. Update visual brand identity to showcase 14 years of lavish world-building.
+                        .row.hidden-md-down
+                            .col-md-8
+                                img.img-responsive.img-rounded(src='/images/anarchyonline-twitter.png')
+                            p.col-md-4.text-left.m-t-md An integrated Twitter feed allows Game Community Managers to feature  and #[strong engage with players] in a way that makes sense.
+                        .m-t-md
+                        h1: small archive.anarchy-online.com
+                        hr
+                        h3 Python (#[a(href="http://scrapy.org/") Scrapy], NodeJS + Express
+                        p.text-left A legacy CMS left my client exposed to attacks. 
+                            | I scraped all web content & web tools into a static site, served via Express. 
+                    .col-md-5
+                        a(href="http://anarchy-online.com" target="_blank"): img.img-responsive.img-rounded(src='/images/anarchyonline-ipad.png')
+                        .row
+                            .col-md-12.text-center
+                                hr.m-t-md
+                                h6 Fresh Visual Update
+                                h6 Consistent with 14 years of brand identity
+                                h6 Scrape legacy, end-of-life CMS into static archive
+                        .row.m-t
+                            a(href="http://anarchy-online.com" target="_blank"): button.btn.btn-primary: h2 #[span.icon-forward] View Site
 
-        .container-fluid.slide(data-anchor='anarchy-online')
-            .row
-                .col-md-2
-                    h1 www.anarchy-online.com
-                    img
+        .slide.fp-auto-height(data-anchor='tutorial-cms')
+                .row
+                    .col-md-4
+                        h1: small Custom RESTful CMS
+                        hr
+                        h3 Python (#[a(href="http://www.cherrypy.org/CherryPy") CherryPy] + #[a(href="http://www.makotemplates.org/") Mako]), SASS
+                        p A custom fixed-width CMS to reboot the in-game help & knowledgebase system of #[a(href="http://www.thesecretworld.com") The Secret World]. 
+                        p Drop-in stylesheets support a wide range of #[strong future products].
+                        p Simple inline WYSIWYG editing via #[a(href="http://ckeditor.com/") Ckeditor] allows contributors to easily update content. 
+                        p Modular block-based templates support a variety of content-rich layouts. Drop-in localization strategy, designed to be highly extensible with #[a(href="http://www.sqlalchemy.org/") SQLAlchemy].
+                    .col-md-8
+                        a(href="https://github.com/leigh-johnson/tsw_tutorial" target="_blank"): img.tsw-tutorial.img-responsive.img-rounded(src="/images/tsw-tutorial.png")
+                        .row.m-t
+                            a(href="https://github.com/leigh-johnson/tsw_tutorial" target="_blank"): button.btn.btn-primary: h2 #[span.icon-forward] View Repo
 
-        .container.slide(data-anchor='a-b-testing')
-            .col-md-6
-        .container.slide(data-anchor='custom-crm')
-            .col-md-6
-    .section(data-anchor='human-readable')
-        .slide
-        .slide
-        .slide
-    .section(data-anchor='workflow-automation')
+        .slide.fp-auto-height(data-anchor='gameplay-design')
+                .row
+                    .col-md-7
+                        h1: small Gameplay Design
+                        hr
+                        h3 Level Design, Narrative Building
+                        p Primary gameplay designer, content implementer, and scripter of 2014 Seasonal events/DLC in #[a(href='http://thesecretworld.com') The Secret World].
+                        p Video game studios, like all small businesses, require #[strong flexibility]. When Funcom's world class design team needed help shipping Holiday content, I rolled up my sleeves and dived in. 
+                        p The Secret World is powered by Funcom's own #[strong Dreamworld Technology.]
+                        .m-t
+                            a(href="http://wiki.crygaia.com/view/The_Broadcast" target="_blank"): button.btn.btn-primary: h2 #[span.icon-forward] The Broadcast 
+                        .m-t
+                            a(href="http://wiki.crygaia.com/view/The_Christmas_Conspiracy" target="_blank"): button.btn.btn-primary: h2 #[span.icon-forward] The Christmas Conspiracy
+                    .col-md-5
+                        h4.text-center #[a(href="http://www.thesecretworld.com/news/the_christmas_conspiracy_event" target="_blank") The Christmas Conspiracy]
+                        a(href="http://www.thesecretworld.com/news/the_christmas_conspiracy_event" target="_blank"): img.img-responsive.img-rounded(src="/images/christmas-conspiracy.jpg")
+                        h4.text-center.m-t-md #[a(href="http://www.thesecretworld.com/news/the_broadcast_halloween_event" target="_blank") The Broadcast]
+                        a(href="http://www.thesecretworld.com/news/the_broadcast_halloween_event" target="_blank"): img.img-responsive.img-rounded(src="/images/broadcast.jpg")

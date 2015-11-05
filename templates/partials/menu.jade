@@ -1,8 +1,27 @@
 nav.navbar.navbar-light.navbar-fixed-top
-    button.navbar-toggler.hidden-sm-up(type="button" data-toggle="collapse" data-target="#navBarCollapse")
-    #navBarCollapse.collapse.navbar-toggleable-xs
+    //button.navbar-toggler.hidden-md-up(type="button" data-toggle="collapse" data-target="#navBarCollapse"): span.icon-menu
+    //#navBarCollapse.collapse.navbar-toggleable-sm
+    .container
         ul.nav.navbar-nav
             li(data-menuanchor="hello").nav-item.active
-                a.nav-link(href="hello") Hello!
+                a.nav-link(href="#hello") Hello!
             li(data-menuanchor="work").nav-item
-                a.nav-link(href="work") Work
+                a.nav-link(href="#work") My Work
+            li.nav-item.navbar-sub.hidden-sm-down
+                ul.nav.navbar-nav
+                    li.nav-item(data-menuanchor="the-park")
+                        a.nav-link(href='#work/the-park') theparkgame.com
+                    li.nav-item(data-menuanchor="anarchy-online")
+                        a.nav-link(href='#work/anarchy-online') anarchy-online.com
+                    li.nav-item(data-menuanchor="tutorial-cms")
+                        a.nav-link(href='#work/tutorial-cms') Tutorial CMS
+                    li.nav-item(data-menuanchor="gameplay-design")
+                        a.nav-link(href="#work/gameplay-design") Gameplay Design
+            li().nav-item 
+                a.nav-link(href="mailto:hi@leighjohnson.me") Get in Touch
+            li().nav-item
+                a(href="https://github.com/leigh-johnson"): button.btn.btn-primary.nav-link.icon-github
+            li().nav-item
+                a(href="https://twitter.com/grepleigh"): button.btn.btn-primary.nav-link.icon-twitter
+            li().nav-item
+                a(href="http://codepen.io/Nuwen/"): button.btn.btn-primary.nav-link.icon-codepen

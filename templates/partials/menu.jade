@@ -7,15 +7,14 @@ nav.navbar.navbar-light.navbar-fixed-top
                 a.nav-link(href="#hello") Hello!
             li(data-menuanchor="work").nav-item
                 a.nav-link(href="#work") My Work
-            li.nav-item.navbar-sub.hidden-sm-down
-                ul.nav.navbar-nav
-                    li.nav-item(data-menuanchor="the-park")
+            li.nav-item.navbar-sub.hidden-sm-down.hide
+                    li.nav-item.hidden-sm-down(data-menuanchor="the-park")
                         a.nav-link(href='#work/the-park') theparkgame.com
-                    li.nav-item(data-menuanchor="anarchy-online")
+                    li.hidden-sm-down.nav-item(data-menuanchor="anarchy-online")
                         a.nav-link(href='#work/anarchy-online') anarchy-online.com
-                    li.nav-item(data-menuanchor="tutorial-cms")
+                    li.hidden-sm-down.nav-item(data-menuanchor="tutorial-cms")
                         a.nav-link(href='#work/tutorial-cms') Tutorial CMS
-                    li.nav-item(data-menuanchor="gameplay-design")
+                    li.hidden-sm-down.nav-item(data-menuanchor="gameplay-design")
                         a.nav-link(href="#work/gameplay-design") Gameplay Design
             li().nav-item 
                 a.nav-link(href="mailto:hi@leighjohnson.me") Get in Touch

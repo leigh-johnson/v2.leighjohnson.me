@@ -7031,7 +7031,7 @@ Copyright (c) 2015 Daniel Eden
   animation-name: slideOutUp; }
 
 .timeline {
-  margin: 10rem 0;
+  margin: 15em 0;
   padding: 0;
   border-top: 2px solid #8275A0;
   list-style: none; }
@@ -7198,6 +7198,10 @@ body {
   background: -moz-linear-gradient(90deg, #7BAABE 5%, #3FB8AF 99%);
   background: -o-linear-gradient(90deg, #7BAABE 5%, #3FB8AF 99%);
   background: linear-gradient(0deg, #7BAABE 5%, #3FB8AF 99%); }
+
+.img-responsive, .figure > img, .carousel-inner > .carousel-item > img,
+.carousel-inner > .carousel-item > a > img {
+  width: 100%; }
 
 @media (max-width: 34em) {
   html {

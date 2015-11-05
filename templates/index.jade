@@ -7,8 +7,13 @@ html
         meta(http-equiv="X-UA-Compatible" content="IE=edge")
 
         title= title || 'Leigh Johnson | Full Stack Web Developer'
-        link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
-
+        meta(property="og:url" content="http://theparkgame.com")
+        meta(property="og:type" content="website")
+        meta(property="og:title" content="The Park")
+        meta(property="og:description" content="Web Developer & Freelancer based in Raleigh, NC. ")
+        meta(property="og:image" content="http://leighjohnson.me/logo-v2.png")
+        meta(property="og:image:width" content="768")
+        link(rel="shortcut icon", href="/favicon.ico")
         //- Global styles
         link(href='https://fonts.googleapis.com/css?family=Raleway:400,700|Bitter:400,700' rel='stylesheet' type='text/css')
         link(href="/styles/site.css", rel="stylesheet")
@@ -29,8 +34,14 @@ html
                     p I keep current with new technology, to give you an extra edge over competition. For example, this site was build with Bootstrap 4!
     
     script(src='/js/bundle.js')
-    script(src="http://10.11.12.8:1337/livereload.js")
-    //script(src="http://localhost:1337/livereload.js")
+    script.
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-69747414-1', {'allowAnchor': true});
+        ga('send', 'pageview', { 'page': location.pathname + location.search + location.hash});
     block js
 
     

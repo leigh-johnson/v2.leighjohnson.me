@@ -300,10 +300,10 @@ blockquote {
   margin: 0 0 1rem; }
 
 a {
-  color: #695c86;
+  color: #f4f4f4;
   text-decoration: none; }
   a:focus, a:hover {
-    color: #453d59;
+    color: white;
     text-decoration: underline; }
   a:focus {
     outline: thin dotted;
@@ -1957,7 +1957,7 @@ fieldset[disabled] a.btn {
 
 .btn-link {
   font-weight: normal;
-  color: #695c86;
+  color: #f4f4f4;
   border-radius: 0; }
   .btn-link, .btn-link:active, .btn-link.active, .btn-link:disabled,
   fieldset[disabled] .btn-link {
@@ -1967,7 +1967,7 @@ fieldset[disabled] a.btn {
   .btn-link:hover {
     border-color: transparent; }
   .btn-link:focus, .btn-link:hover {
-    color: #453d59;
+    color: white;
     text-decoration: underline;
     background-color: transparent; }
   .btn-link:disabled:focus, .btn-link:disabled:hover,
@@ -2935,7 +2935,7 @@ input[type="button"].btn-block {
       padding: 0.5rem 0.75rem;
       margin-left: -1px;
       line-height: 1.5;
-      color: #695c86;
+      color: #f4f4f4;
       text-decoration: none;
       background-color: #fff;
       border: 1px solid #ddd; }
@@ -2951,7 +2951,7 @@ input[type="button"].btn-block {
   .pagination > li > a:focus, .pagination > li > a:hover,
   .pagination > li > span:focus,
   .pagination > li > span:hover {
-    color: #453d59;
+    color: white;
     background-color: #eceeef;
     border-color: #ddd; }
   .pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover,
@@ -7031,7 +7031,7 @@ Copyright (c) 2015 Daniel Eden
   animation-name: slideOutUp; }
 
 .timeline {
-  margin: 15em 0;
+  margin: 15em 0 0 0;
   padding: 0;
   border-top: 2px solid #8275A0;
   list-style: none; }
@@ -7369,3 +7369,6 @@ h1 {
 @media (max-width: 48em) {
   .navbar .container {
     max-width: 100%; } }
+
+.nav-link {
+  font-size: 0.8rem; }

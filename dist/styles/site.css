@@ -7031,10 +7031,15 @@ Copyright (c) 2015 Daniel Eden
   animation-name: slideOutUp; }
 
 .timeline {
-  margin: 15em 0 0 0;
   padding: 0;
   border-top: 2px solid #8275A0;
   list-style: none; }
+  @media (max-width: 74em) {
+    .timeline {
+      margin: 8em 0 0 0; } }
+  @media (min-width: 75em) {
+    .timeline {
+      margin: 15em 0 0 0; } }
 
 .timeline-step {
   float: left;

@@ -37,10 +37,15 @@ $timeline-h-summary-label-distance:     10 + ($timeline-h-summary-size-step/2) +
 
 
 .timeline {
-  margin: 15em 0 0 0;
   padding: 0;
   border-top: $timeline-h-size-line solid $timeline-h-color-line;
   list-style: none;
+  @media(max-width: 74em){
+   margin: 8em 0 0 0;   
+  }
+  @media(min-width: 75em){
+      margin: 15em 0 0 0;
+  }
 }
 
 .timeline-step {
